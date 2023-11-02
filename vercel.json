@@ -1,0 +1,16 @@
+{
+    "version":2,
+    "name":"mail sender",
+    "builds":[
+        {
+            "src": "code_runner.js",
+            "use": "@vercel/node"
+        }
+    ],
+    "routes":[
+        { 
+            "src": "/(.*)", 
+             "dest": "/code_runner.js" 
+    }
+    ]
+}
